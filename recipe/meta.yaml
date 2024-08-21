@@ -18,6 +18,7 @@ build:
 
 requirements:
   host:
+     - pip {{ pip }}
      - python
      - git >=2.2
      - flit-core >=3.5,<4
