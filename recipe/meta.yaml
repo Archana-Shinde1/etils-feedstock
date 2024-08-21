@@ -17,6 +17,8 @@ build:
   script: python -m pip install .[array-types, edc, epath, enp, epy, etqdm, etree, etree-dm, etree-tf ]
 
 requirements:
+  build:
+     - pip {{ pip }}
   host:
      - pip {{ pip }}
      - python
@@ -25,6 +27,7 @@ requirements:
  
   run:
    # conda build requirements
+     - pip {{ pip }}
      - python
      - numpy {{ numpy }}
      - zipp
